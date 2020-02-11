@@ -13,9 +13,6 @@ echo "Build success"
 echo "==> Changing directory to '$BUILD_DIR' ..."
 cd $BUILD_DIR
 
-echo "#################################################"
-echo "Now deploying to GitHub Pages..."
-
 # Get respository
 if [[ -z "$TARGET_REPO" ]]; then
   REPOSITORY_NAME="${GITHUB_REPOSITORY}"
@@ -43,6 +40,12 @@ if [ -z "$(git status --porcelain)" ]; then
     echo "The BUILD_DIR is setting error or nothing produced" && \
     echo "Exiting..."
     exit 0
+fi
+
+# Generate a CNAME file
+if [ "$CNAME" ]; then
+  echo "Generating a CNAME file..."
+  echo $CNAME > CNAME
 fi
 
 echo "==> Starting deploying"
