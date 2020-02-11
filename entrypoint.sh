@@ -13,8 +13,11 @@ echo "Build success"
 echo "==> Changing directory to '$BUILD_DIR' ..."
 cd $BUILD_DIR
 
-echo "#################################################"
-echo "Now deploying to GitHub Pages..."
+# Generate a CNAME file
+if [ "$CNAME" ]; then
+  echo "Generating a CNAME file..."
+  echo $CNAME > CNAME
+fi
 
 # Get respository
 if [[ -z "$TARGET_REPO" ]]; then
@@ -25,7 +28,7 @@ fi
 
 # Get branch
 if [[ -z "$TARGET_BRANCH" ]]; then
-  DEPLOY_BRAN="github-pages"
+  DEPLOY_BRAN="gh-pages"
 else
   DEPLOY_BRAN="$TARGET_BRANCH"
 fi
