@@ -37,7 +37,7 @@ jobs:
 | :------------ | :------------ |:------------ |:------------ |
 | `ACCESS_TOKEN` | github的token | `secrets`  |  **是** |
 | `TARGET_REPO` | 目标仓库，例： `jenkey2011/blog`。**默认当前仓库** | `env` | **否** |
-| `TARGET_REPO` | 目标仓库的分支，例：`gh-pages`。**默认 gh-pages**| `env` | **否** |
+| `TARGET_BRANCH` | 目标仓库的分支，例：`gh-pages`。**默认 gh-pages**| `env` | **否** |
 | `BUILD_SCRIPT` | 构建脚本 例： `yarn && yarn build` | `env` | **是** |
 | `BUILD_DIR` | 构建产物的目录 e.g.: `blog/.vuepress/dist/` | `env` | **是** |
 | `CNAME` | Github Pages 站点别名 | `env` | **no** |
