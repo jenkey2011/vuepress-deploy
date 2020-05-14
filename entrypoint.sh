@@ -29,8 +29,8 @@ fi
 
 # Final repository
 DEPLOY_REPO="https://${ACCESS_TOKEN}@github.com/${REPOSITORY_NAME}.git"
-if [ "$TARGET" ]; then
-  DEPLOY_REPO="$TARGET"
+if [ "$TARGET_LINK" ]; then
+  DEPLOY_REPO="$TARGET_LINK"
 fi
 
 echo "==> Prepare to deploy"
