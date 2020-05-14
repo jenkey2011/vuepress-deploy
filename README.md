@@ -38,6 +38,7 @@ The action will auto deploy the vuepress project when you push your code. Enjoy!
 | `ACCESS_TOKEN` | Personal access token | `secrets`  |  **Yes** |
 | `TARGET_REPO` | The repository you want to deploy. e.g.:`jenkey2011/blog`. Default: **current repository** | `env` | **No** |
 | `TARGET_BRANCH` | The branch you want to deploy. e.g.:`gh-pages`.Default: **gh-pages** | `env` | **No** |
+| `TARGET_LINK` | The full address of the target repo will cover `TARGET_REPO` for other platforms. e.g.:`https://user:${{ secrets.CODING_TOKEN }}@team.coding.net/team/repo.git`. | `env` | **No** |
 | `BUILD_SCRIPT` | The script to build the vuepress project. e.g.: `yarn && yarn build` | `env` | **Yes** |
 | `BUILD_DIR` | The output of the build-script above. e.g.: `blog/.vuepress/dist/` | `env` | **Yes** |
 | `CNAME` | Alias Record of your site. | `env` | **no** |
