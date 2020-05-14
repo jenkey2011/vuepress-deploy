@@ -1,4 +1,4 @@
-English | [简体中文](./README.zh-CN.md)
+[English](./README.md) | 简体中文
 # vuepress-deploy
 
 自动构建、部署`vuepress`应用到Github Pages，自由设置仓库、分支
