@@ -29,6 +29,9 @@ fi
 
 # Final repository
 DEPLOY_REPO="https://${ACCESS_TOKEN}@github.com/${REPOSITORY_NAME}.git"
+if [ "$TARGET" ]; then
+  DEPLOY_REPO="$TARGET"
+fi
 
 echo "==> Prepare to deploy"
 
@@ -51,7 +54,7 @@ fi
 echo "==> Starting deploying"
 
 git add .
-git commit -m 'Auto deploy'
+git commit -m 'Auto deploy from Github Actions'
 git push --force $DEPLOY_REPO master:$DEPLOY_BRAN
 rm -fr .git
 
