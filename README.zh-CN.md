@@ -1,4 +1,4 @@
-English | [简体中文](./README.zh-CN.md)
+[English](./README.md) | 简体中文
 # vuepress-deploy
 
 自动构建、部署`vuepress`应用到Github Pages，自由设置仓库、分支
@@ -37,7 +37,8 @@ jobs:
 | :------------ | :------------ |:------------ |:------------ |
 | `ACCESS_TOKEN` | github的token | `secrets`  |  **是** |
 | `TARGET_REPO` | 目标仓库，例： `jenkey2011/blog`。**默认当前仓库** | `env` | **否** |
-| `TARGET_REPO` | 目标仓库的分支，例：`gh-pages`。**默认 gh-pages**| `env` | **否** |
+| `TARGET_BRANCH` | 目标仓库的分支，例：`gh-pages`。**默认 gh-pages**| `env` | **否** |
+| `TARGET_LINK` | 目标仓库的完整链接，会覆盖目标仓库，用于其他平台，例：`https://user:${{ secrets.CODING_TOKEN }}@team.coding.net/team/repo.git`| `env` | **否** |
 | `BUILD_SCRIPT` | 构建脚本 例： `yarn && yarn build` | `env` | **是** |
 | `BUILD_DIR` | 构建产物的目录 e.g.: `blog/.vuepress/dist/` | `env` | **是** |
 | `CNAME` | Github Pages 站点别名 | `env` | **no** |
