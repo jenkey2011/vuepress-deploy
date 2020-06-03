@@ -22,7 +22,7 @@ fi
 
 # Get branch
 if [[ -z "$TARGET_BRANCH" ]]; then
-  DEPLOY_BRAN="github-pages"
+  DEPLOY_BRAN="gh-pages"
 else
   DEPLOY_BRAN="$TARGET_BRANCH"
 fi
