@@ -62,7 +62,7 @@ For more information: [https://help.github.com/en/actions/automating-your-workfl
 ### Create a workflow file
 If you repo doesn't already have one, create a workflow file. You must store workflows in the `.github/workflows` directory in the root of your repository.
 
-In `.github/workflows`, add a `.yml` or `.yaml` file for your workflow. For example, `.github/workflows/vueoress-deploy.yml`.
+In `.github/workflows`, add a `.yml` or `.yaml` file for your workflow. For example, `.github/workflows/vuepress-deploy.yml`.
 
 
 For more information: [https://help.github.com/en/actions/automating-your-workflow-with-github-actions/configuring-a-workflow](https://help.github.com/en/actions/automating-your-workflow-with-github-actions/configuring-a-workflow)
