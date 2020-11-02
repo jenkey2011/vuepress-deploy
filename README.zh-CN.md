@@ -29,6 +29,35 @@ jobs:
 ```
 上述配置的结果是：每次推送代码，将自动构建、部署到`username/repo`的`master`分支。就是这么简单~
 
+## 示例
+
+示例代码库: [https://github.com/jenkey2011/vuepress-deploy-demo](https://github.com/jenkey2011/vuepress-deploy-demo)
+
+### 实例说明
+
+两个库
+
+- 源码库(`vuepress-deploy-demo`), 我们称为 `A`
+- 部署目标代码库(`vuepress-deploy-demo-target`), 我们称为 `B`
+
+共有三种部署情况，配置文件分别如下：
+
+- `A` TO `A:gh_pages`: `deploy-to-current-repo-gh_pages.yml`
+- `A` TO `B:master`: `deploy-to-other-repo-master.yml`
+- `A` TO `B:custom_branch`: `deploy-to-other-repo-custom_branch.yml`
+
+**在这看部署后的效果:**
+
+- 流水线编译过程: [https://github.com/jenkey2011/vuepress-deploy-demo/actions](https://github.com/jenkey2011/vuepress-deploy-demo/actions)
+
+- `A` TO `A:gh_pages`: [https://github.com/jenkey2011/vuepress-deploy-demo/tree/gh_pages](https://github.com/jenkey2011/vuepress-deploy-demo/tree/gh_pages)
+
+- `A` TO `B:master`:[https://github.com/jenkey2011/vuepress-deploy-demo-target/tree/master](https://github.com/jenkey2011/vuepress-deploy-demo-target/tree/master)
+
+- `A` TO `B:custom_branch`:[https://github.com/jenkey2011/vuepress-deploy-demo-target/tree/custom_branch](https://github.com/jenkey2011/vuepress-deploy-demo-target/tree/custom_branch)
+
+- `B`仓库`Git-page`效果： [https://jenkey2011.github.io/vuepress-deploy-demo-target/](https://jenkey2011.github.io/vuepress-deploy-demo-target/)
+
 > 如果不了解`github workflow`什么的，看下面的[详细教程](#step-by-step-guide)
 
 ## 参数
