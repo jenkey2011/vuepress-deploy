@@ -53,8 +53,13 @@ fi
 
 echo "==> Starting deploying"
 
+# Final repository
+if [[ -z "$COMMIT_MESSAGE" ]]; then
+  COMMIT_MESSAGE="Auto deploy from Github Actions"
+fi
+
 git add .
-git commit -m 'Auto deploy from Github Actions'
+git commit -m $COMMIT_MESSAGE
 git push --force $DEPLOY_REPO master:$DEPLOY_BRAN
 rm -fr .git
 
