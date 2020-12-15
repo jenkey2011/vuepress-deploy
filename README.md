@@ -24,6 +24,7 @@ jobs:
         TARGET_BRANCH: master
         BUILD_SCRIPT: yarn && yarn build
         BUILD_DIR: blog/.vuepress/dist/
+        COMMIT_MESSAGE: 'Auto deploy from Github Actions'
 ```
 
 The action will auto deploy the vuepress project when you push your code. Enjoy!!!
@@ -69,7 +70,8 @@ There are three situations. Each situation corresponds to a deployment file.
 | `TARGET_LINK` | The full address of the target repo will cover `TARGET_REPO` for other platforms. e.g.:`https://user:${{ secrets.CODING_TOKEN }}@team.coding.net/team/repo.git`. | `env` | **No** |
 | `BUILD_SCRIPT` | The script to build the vuepress project. e.g.: `yarn && yarn build` | `env` | **Yes** |
 | `BUILD_DIR` | The output of the build-script above. e.g.: `blog/.vuepress/dist/` | `env` | **Yes** |
-| `CNAME` | Alias Record of your site. | `env` | **no** |
+| `COMMIT_MESSAGE` | The commit message supplied when pushing new changes e.g.: `Auto deploy from Github Actions` | `env` | **No** |
+| `CNAME` | Alias Record of your site. | `env` | **No** |
 
 
 ## Step-by-Step Guide

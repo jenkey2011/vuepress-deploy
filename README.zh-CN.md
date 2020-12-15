@@ -69,8 +69,9 @@ jobs:
 | `TARGET_BRANCH` | 目标仓库的分支，例：`gh-pages`。**默认 gh-pages**| `env` | **否** |
 | `TARGET_LINK` | 目标仓库的完整链接，会覆盖目标仓库，用于其他平台，例：`https://user:${{ secrets.CODING_TOKEN }}@team.coding.net/team/repo.git`| `env` | **否** |
 | `BUILD_SCRIPT` | 构建脚本 例： `yarn && yarn build` | `env` | **是** |
-| `BUILD_DIR` | 构建产物的目录 e.g.: `blog/.vuepress/dist/` | `env` | **是** |
-| `CNAME` | Github Pages 站点别名 | `env` | **no** |
+| `BUILD_DIR` | 构建产物的目录 例： `blog/.vuepress/dist/` | `env` | **是** |
+| `COMMIT_MESSAGE` | 自动部署时的提交信息 例： `Auto deploy from Github Actions` | `env` | **否** |
+| `CNAME` | Github Pages 站点别名 | `env` | **否** |
 ## 详细教程
 
 ### 创建token
