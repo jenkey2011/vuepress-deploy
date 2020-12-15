@@ -24,7 +24,6 @@ jobs:
         TARGET_BRANCH: master
         BUILD_SCRIPT: yarn && yarn build
         BUILD_DIR: blog/.vuepress/dist/
-        COMMIT_MESSAGE: 'Auto deploy from Github Actions'
 ```
 
 The action will auto deploy the vuepress project when you push your code. Enjoy!!!
