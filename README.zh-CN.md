@@ -91,3 +91,8 @@ jobs:
 
 详细信息看：[https://help.github.com/en/actions/automating-your-workflow-with-github-actions/configuring-a-workflow](https://help.github.com/en/actions/automating-your-workflow-with-github-actions/configuring-a-workflow)
 
+### 打赏~
+
+如果你觉着这个action对你有所帮助的话，可以考虑考虑打赏个猫罐头钱~
+
+[![r121mt.png](https://s3.ax1x.com/2020/12/16/r121mt.png)](https://imgchr.com/i/r121mt)
