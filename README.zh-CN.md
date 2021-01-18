@@ -79,8 +79,6 @@ jobs:
 点击你的头像 > Settings > Developer settings > Personal access tokens > Generate new token. 
 权限至少要勾选`repo`，不清楚的，直接无脑全选就行~ 问题不大，不要慌。
 
-详细信息看：[https://help.github.com/en/github/authenticating-to-github/authorizing-a-personal-access-token-for-use-with-saml-single-sign-on](https://help.github.com/en/github/authenticating-to-github/authorizing-a-personal-access-token-for-use-with-saml-single-sign-on)
-
 ### 创建secrets
 
 你的vuepress项目源码仓库下 > Settings > Secrets， 创建`ACCESS_TOKEN`， 值就填写你刚才创建的token，确定。
@@ -89,7 +87,11 @@ jobs:
 
 在项目根目录下，创建`.github/workflows`，然后再创建一个 `.yml`文件，名字随便取，例：`vuepress-deploy.yml`。
 
-详细信息看：[https://help.github.com/en/actions/automating-your-workflow-with-github-actions/configuring-a-workflow](https://help.github.com/en/actions/automating-your-workflow-with-github-actions/configuring-a-workflow)
+**详细信息**：
+
+1. [使用个人访问令牌触发新工作流程](https://docs.github.com/cn/actions/reference/events-that-trigger-workflows#triggering-new-workflows-using-a-personal-access-token)
+2. [Encrypted secrets](https://docs.github.com/en/actions/reference/encrypted-secrets)
+3. [了解 GitHub Actions](https://docs.github.com/cn/actions/learn-github-actions)
 
 ## 赞助~
 
