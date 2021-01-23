@@ -79,19 +79,17 @@ There are three situations. Each situation corresponds to a deployment file.
 
 click your profile icon > Settings > Developer settings > Personal access tokens > Generate new token > At least check `repo`. Then you will get a token, copy it.
 
-
-For more information: [https://help.github.com/en/github/authenticating-to-github/authorizing-a-personal-access-token-for-use-with-saml-single-sign-on](https://help.github.com/en/github/authenticating-to-github/authorizing-a-personal-access-token-for-use-with-saml-single-sign-on)
-
 ### Creating encrypted secrets
 
 Under your repository name, click  Settings > Secrets > Type `ACCESS_TOKEN` in the "Name" input box && the the personal access token as value.
-
-For more information: [https://help.github.com/en/actions/automating-your-workflow-with-github-actions/creating-and-using-encrypted-secrets](https://help.github.com/en/actions/automating-your-workflow-with-github-actions/creating-and-using-encrypted-secrets)
 
 ### Create a workflow file
 If you repo doesn't already have one, create a workflow file. You must store workflows in the `.github/workflows` directory in the root of your repository.
 
 In `.github/workflows`, add a `.yml` or `.yaml` file for your workflow. For example, `.github/workflows/vuepress-deploy.yml`.
 
+**For more information**:
 
-For more information: [https://help.github.com/en/actions/automating-your-workflow-with-github-actions/configuring-a-workflow](https://help.github.com/en/actions/automating-your-workflow-with-github-actions/configuring-a-workflow)
+1. [Triggering new workflows using a personal access token](https://docs.github.com/en/actions/reference/events-that-trigger-workflows#triggering-new-workflows-using-a-personal-access-token)
+2. [Encrypted secrets](https://docs.github.com/en/actions/reference/encrypted-secrets)
+3. [Learn GitHub Actions](https://docs.github.com/en/actions/learn-github-actions)
