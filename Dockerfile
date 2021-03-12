@@ -1,4 +1,4 @@
-FROM node:10.14.2-alpine as base
+FROM node:fermium-slim as base
 
 LABEL "com.github.actions.name"="Vuepress deploy"
 LABEL "com.github.actions.description"="A GitHub Action to build and deploy Vuepress sites to GitHub Pages"
