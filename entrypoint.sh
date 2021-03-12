@@ -1,8 +1,12 @@
-#!/bin/sh
+#!/bin/bash
 
 set -e
 
-echo '' # see https://github.com/actions/toolkit/issues/168
+echo ''
+
+# env
+echo "node version: $(node -v)"
+echo "npm version: $(npm -v)"
 
 # Build vuepress project
 echo "==> Start building \n $BUILD_SCRIPT"
