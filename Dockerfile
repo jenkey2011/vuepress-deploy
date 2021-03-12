@@ -9,7 +9,7 @@ LABEL "repository"="https://github.com/jenkey2011/vuepress-deploy"
 LABEL "homepage"="https://github.com/jenkey2011/vuepress-deploy"
 LABEL "maintainer"="Jenkey2011 <jenkey2011@163.com>"
 
-RUN apk add --no-cache git jq
+RUN apt-get install git jq
 
 COPY entrypoint.sh /entrypoint.sh
 ENTRYPOINT ["/entrypoint.sh"]
