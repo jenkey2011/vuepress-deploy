@@ -32,6 +32,7 @@ fi
 # <access-token>:x-oauth-basic@github.com
 # DEPLOY_REPO="https://${ACCESS_TOKEN}@github.com/${REPOSITORY_NAME}.git"
 DEPLOY_REPO="https://${ACCESS_TOKEN}:x-oauth-basic@github.com/${REPOSITORY_NAME}.git"
+echo 'dev!!!!!!!!!!!'
 # git@github.com:jenkey2011/vuepress-deploy.git
 if [ "$TARGET_LINK" ]; then
   DEPLOY_REPO="$TARGET_LINK"
