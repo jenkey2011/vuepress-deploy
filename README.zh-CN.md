@@ -3,6 +3,10 @@
 
 自动构建、部署`vuepress`应用到Github Pages，自由设置仓库、分支
 
+电报群: [https://t.me/joinchat/Cz9TxNMrjIs3OWQ1](https://t.me/joinchat/Cz9TxNMrjIs3OWQ1)
+
+QQ群: 742434216
+
 ## 使用
 在你项目仓库`.github/workflows`目录下创建一个 `.yml`文件，举例：`vuepress-deploy.yml`。
 

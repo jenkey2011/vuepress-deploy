@@ -3,6 +3,10 @@ English | [简体中文](./README.zh-CN.md)
 
 A GitHub Action to build and deploy Vuepress sites to GitHub Pages
 
+Telegram Group: [https://t.me/joinchat/Cz9TxNMrjIs3OWQ1](https://t.me/joinchat/Cz9TxNMrjIs3OWQ1)
+
+QQ Group: 742434216
+
 ## Usage
 Create `vuepress-deploy.yml` in the `.github/workflows` directory in the root of your repository.
 
