@@ -1,5 +1,5 @@
 [English](./README.md) | 简体中文
-# vuepress-deploy
+# vuepress-deploy ![visitor badge](https://visitor-badge.glitch.me/badge?page_id=jenkey2011.vuepress-deploy-cn)
 
 自动构建、部署`vuepress`应用到Github Pages，自由设置仓库、分支
 

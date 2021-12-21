@@ -1,6 +1,5 @@
 English | [简体中文](./README.zh-CN.md)
-# vuepress-deploy
-
+# vuepress-deploy ![visitor badge](https://visitor-badge.glitch.me/badge?page_id=jenkey2011.vuepress-deploy)
 A GitHub Action to build and deploy Vuepress sites to GitHub Pages
 
 Telegram Group: [https://t.me/joinchat/Cz9TxNMrjIs3OWQ1](https://t.me/joinchat/Cz9TxNMrjIs3OWQ1)
