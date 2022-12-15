@@ -4,7 +4,6 @@ set -e
 
 echo ''
 
-
 # env
 echo "node version: $(node -v)"
 echo "npm version: $(npm -v)"
@@ -18,6 +17,7 @@ echo "Build success"
 echo "==> Changing directory to '$BUILD_DIR' ..."
 cd $BUILD_DIR
 
+# workaround for 'fatal: unsafe repository' error
 git config --global --add safe.directory "*"
 
 # Get respository
