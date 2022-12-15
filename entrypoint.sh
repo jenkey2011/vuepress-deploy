@@ -4,6 +4,7 @@ set -e
 
 echo ''
 
+
 # env
 echo "node version: $(node -v)"
 echo "npm version: $(npm -v)"
@@ -16,6 +17,8 @@ echo "Build success"
 # Change directory to the dest
 echo "==> Changing directory to '$BUILD_DIR' ..."
 cd $BUILD_DIR
+
+git config --global --add safe.directory "*"
 
 # Get respository
 if [[ -z "$TARGET_REPO" ]]; then
