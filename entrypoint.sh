@@ -17,6 +17,9 @@ echo "Build success"
 echo "==> Changing directory to '$BUILD_DIR' ..."
 cd $BUILD_DIR
 
+# workaround for 'fatal: unsafe repository' error
+git config --global --add safe.directory "*"
+
 # Get respository
 if [[ -z "$TARGET_REPO" ]]; then
   REPOSITORY_NAME="${GITHUB_REPOSITORY}"
