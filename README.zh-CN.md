@@ -80,7 +80,7 @@ jobs:
 
 ### 创建token
 
-点击你的头像 > Settings > Developer settings > Personal access tokens > Generate new token. 
+点击你的头像 > Settings > Developer settings > Personal access tokens > Generate new token (Classic). 
 权限至少要勾选`repo`，不清楚的，直接无脑全选就行~ 问题不大，不要慌。
 
 ### 创建secrets
