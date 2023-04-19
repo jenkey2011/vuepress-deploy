@@ -80,7 +80,7 @@ There are three situations. Each situation corresponds to a deployment file.
 
 ### Create a personal access token
 
-click your profile icon > Settings > Developer settings > Personal access tokens > Generate new token > At least check `repo`. Then you will get a token, copy it.
+click your profile icon > Settings > Developer settings > Personal access tokens > Generate new token (Classic) > At least check `repo`. Then you will get a token, copy it.
 
 ### Creating encrypted secrets
 
